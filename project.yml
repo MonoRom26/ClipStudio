@@ -1,0 +1,25 @@
+name: ClipStudio
+options:
+  bundleIdPrefix: com.example
+  deploymentTarget:
+    iOS: "14.0"
+targets:
+  ClipStudio:
+    type: application
+    platform: iOS
+    sources: [Sources]
+    info:
+      path: Info.plist
+      properties:
+        CFBundleDisplayName: Clip Studio
+        UILaunchScreen: {}
+        NSPhotoLibraryAddUsageDescription: Used to save your edited videos to Photos.
+        NSPhotoLibraryUsageDescription: Used to pick videos to edit.
+        UISupportedInterfaceOrientations: [UIInterfaceOrientationPortrait]
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.clipstudio
+        MARKETING_VERSION: "1.0"
+        CURRENT_PROJECT_VERSION: "1"
+        SWIFT_VERSION: "5.0"
+        TARGETED_DEVICE_FAMILY: "1"
